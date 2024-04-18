@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAÉ 501</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/loader.css">
+</head>
+<body class="bg-gray-300">
+    <div id="main-load">
+        <div id="loader"></div>
+    </div>
+
+    <header class="bg-red-400 py-4 px-10 flex items-center justify-between">
+        <div>
+            <img src="img/logo.jpg" alt="Logo" class="rounded-full h-12">
+        </div>
+        <button id="menu-btn" class="md:hidden block">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+        <nav id="nav-menu" class="hidden md:block">
+            <ul class="md:flex justify-center">
+                <li class="mr-6"><a href="#" class="text-white hover:text-gray-300">L'athlétisme en NC</a></li>
+                <li class="mr-6"><a href="#athletes" class="text-white hover:text-gray-300">Nos Athlètes</a></li>
+                <li class="mr-6"><a href="#jeux" class="text-white hover:text-gray-300">Jeux</a></li>
+                <li class="mr-6"><a href="#videos" class="text-white hover:text-gray-300">Vidéos</a></li>
+                <li class="mr-6"><a href="#a-propos" class="text-white hover:text-gray-300">A propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="py-8 relative" id="sec-1">
+        <h1 class="text-3xl font-semibold z-10 absolute left-0 w-full text-center text-white" id="titre-scroll">SCROLL VERS LE BAS</h1>
+        <img class="z-10 absolute w-full" src="img/scroll bas.svg" alt="Scroll vers le bas" id="img-scroll">
+        <div class="splide" id="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="img/image1.jpg" alt="Image 1"></li>
+                    <li class="splide__slide"><img src="img/image2.jpg" alt="Image 2"></li>
+                    <li class="splide__slide"><img src="img/image3.jpg" alt="Image 3"></li>
+                </ul>
+            </div>
+        </div>
+    </section>  
+
+    
+<main class="p-0.5 sm:p-1 md:p-2.5">
+    <section class="separation-section bg-white"></section>
+
+    <div id="#" class="container mx-auto py-8 mb-32">
+        <h2 id="div-1" class="text-2xl font-semibold text-center mb-8">Présentation de l'athlétisme en Nouvelle-Calédonie</h2>
+        <div class="flex flex-wrap justify-center items-center gap-4 md:flex-row">
+            <div class="flex flex-1 flex-col items-center mx-4">
+                <h3 id="div-2" class="text-xl text-center mb-2">À propos de la ligue d'athlétisme</h3>
+                <img src="img/ex présentation.jpg" alt="Ligue d'athlétisme" class="div-3-4 rounded-xl mb-1 max-w-xs">
+                <p class="div-3-4">Breve description de la ligue d'athlétisme en Nouvelle-Calédonie.</p>
+            </div>
+            <div class="flex flex-1 flex-col items-center mx-4">
+                <h3 id="div-5" class="text-xl text-center mb-2">À propos de l'athlétisme</h3>
+                <img src="img/ex présentation.jpg" alt="Athlétisme" class="div-6-7 rounded-xl mb-1 max-w-xs">
+                <p class="div-6-7">Breve description des disciplines de l'athlétisme.</p>
+            </div>
+            <div class="flex flex-1 flex-col items-center mx-4">
+                <h3 id="div-8" class="text-xl text-center mb-2">À propos de la fédération d'athlétisme</h3>
+                <img src="img/ex présentation.jpg" alt="Fédération d'athlétisme" class="div-9-10 rounded-xl mb-1 max-w-xs">
+                <p class="div-9-10">Breve description de la fédération d'athlétisme et son rôle.</p>
+            </div>
+        </div>
+    </div>   
+    
+
+    <section class="separation-section bg-white"></section>
+
+    <div id="athletes" class="container mx-auto py-8">
+        <h2 id="div-12" class="text-2xl font-semibold text-center mb-8">Présentation des athlètes de Nouvelle-Calédonie</h2>
+        <div class="flex flex-wrap justify-center gap-4 md:flex-row">
+            <div class="flip-card">
+                <div class="div-11 flip-card-inner">
+                    <div class="flip-card-front p-8">
+                        <h2 class="text-2xl font-semibold">Nom et prénom</h2>
+                        <img src='https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairDreads01&accessoriesType=Sunglasses&hairColor=Auburn&facialHairType=BeardMajestic&facialHairColor=BlondeGolden&clotheType=BlazerShirt&eyeType=Cry&eyebrowType=AngryNatural&mouthType=Smile&skinColor=Tanned'/>
+                        <p>Description de l'athlète</p>
+                    </div>
+                    <div class="flip-card-back p-8">
+                        <h2 class="text-2xl font-semibold">Plus d'infos</h2>
+                        <p>Informations supplémentaires sur l'athlète</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="div-11 flip-card-inner">
+                    <div class="flip-card-front p-8">
+                        <h2 class="text-2xl font-semibold">Nom et prénom</h2>
+                        <img src='https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairTheCaesarSidePart&accessoriesType=Prescription02&hairColor=Black&facialHairType=BeardMajestic&facialHairColor=Platinum&clotheType=Overall&clotheColor=PastelGreen&eyeType=Dizzy&eyebrowType=DefaultNatural&mouthType=Twinkle&skinColor=Tanned'/>
+                        <p>Description de l'athlète</p>
+                    </div>
+                    <div class="flip-card-back p-8">
+                        <h2 class="text-2xl font-semibold">Plus d'infos</h2>
+                        <p>Informations supplémentaires sur l'athlète</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="div-11 flip-card-inner">
+                    <div class="flip-card-front p-8">
+                        <h2 class="text-2xl font-semibold">Nom et prénom</h2>
+                        <img src='https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Kurt&hatColor=PastelBlue&hairColor=Red&facialHairType=MoustacheMagnum&facialHairColor=Brown&clotheType=GraphicShirt&clotheColor=Red&graphicType=Selena&eyeType=Wink&eyebrowType=UnibrowNatural&mouthType=Grimace&skinColor=Pale'/>
+                        <p>Description de l'athlète</p>
+                    </div>
+                    <div class="flip-card-back p-8">
+                        <h2 class="text-2xl font-semibold">Plus d'infos</h2>
+                        <p>Informations supplémentaires sur l'athlète</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="div-11 flip-card-inner">
+                    <div class="flip-card-front p-8">
+                        <h2 class="text-2xl font-semibold">Nom et prénom</h2>
+                        <img src='https://avataaars.io/?avatarStyle=Transparent&topType=LongHairFrida&accessoriesType=Prescription02&hairColor=Blue&facialHairType=MoustacheFancy&facialHairColor=Red&clotheType=GraphicShirt&clotheColor=PastelYellow&graphicType=Skull&eyeType=Default&eyebrowType=UpDownNatural&mouthType=Smile&skinColor=DarkBrown'/>
+                        <p>Description de l'athlète</p>
+                    </div>
+                    <div class="flip-card-back p-8">
+                        <h2 class="text-2xl font-semibold">Plus d'infos</h2>
+                        <p>Informations supplémentaires sur l'athlète</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="div-11 flip-card-inner">
+                    <div class="flip-card-front p-8">
+                        <h2 class="text-2xl font-semibold">Nom et prénom</h2>
+                        <img src='https://avataaars.io/?avatarStyle=Transparent&topType=Hat&accessoriesType=Prescription02&facialHairType=Blank&facialHairColor=BlondeGolden&clotheType=Hoodie&clotheColor=Black&graphicType=Deer&eyeType=EyeRoll&eyebrowType=DefaultNatural&mouthType=Vomit&skinColor=Light'/>
+                        <p>Description de l'athlète</p>
+                    </div>
+                    <div class="flip-card-back p-8">
+                        <h2 class="text-2xl font-semibold">Plus d'infos</h2>
+                        <p>Informations supplémentaires sur l'athlète</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="bottom-div flex flex-wrap justify-center gap-4 md:flex-row">
+            <div class="flip-card">
+                <div class="div-11 flip-card-inner">
+                    <div class="flip-card-front p-8">
+                        <h2 class="text-2xl font-semibold">Nom et prénom</h2>
+                        <img src='https://avataaars.io/?avatarStyle=Transparent&topType=LongHairCurly&accessoriesType=Prescription01&hairColor=BrownDark&facialHairType=Blank&clotheType=GraphicShirt&clotheColor=Red&graphicType=SkullOutline&eyeType=EyeRoll&eyebrowType=AngryNatural&mouthType=Twinkle&skinColor=Tanned'/>
+                        <p>Description de l'athlète</p>
+                    </div>
+                    <div class="flip-card-back p-8">
+                        <h2 class="text-2xl font-semibold">Plus d'infos</h2>
+                        <p>Informations supplémentaires sur l'athlète</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="div-11 flip-card-inner">
+                    <div class="flip-card-front p-8">
+                        <h2 class="text-2xl font-semibold">Nom et prénom</h2>
+                        <img src='https://avataaars.io/?avatarStyle=Transparent&topType=Turban&accessoriesType=Sunglasses&hatColor=Pink&hairColor=Blonde&facialHairType=Blank&clotheType=CollarSweater&clotheColor=PastelRed&graphicType=Skull&eyeType=Side&eyebrowType=SadConcernedNatural&mouthType=ScreamOpen&skinColor=Pale'/>
+                        <p>Description de l'athlète</p>
+                    </div>
+                    <div class="flip-card-back p-8">
+                        <h2 class="text-2xl font-semibold">Plus d'infos</h2>
+                        <p>Informations supplémentaires sur l'athlète</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="div-11 flip-card-inner">
+                    <div class="flip-card-front p-8">
+                        <h2 class="text-2xl font-semibold">Nom et prénom</h2>
+                        <img src='https://avataaars.io/?avatarStyle=Transparent&topType=LongHairCurvy&accessoriesType=Prescription01&hatColor=PastelOrange&hairColor=Brown&facialHairType=Blank&clotheType=ShirtVNeck&clotheColor=Blue03&eyeType=Close&eyebrowType=UpDownNatural&mouthType=Serious&skinColor=Black'/>
+                        <p>Description de l'athlète</p>
+                    </div>
+                    <div class="flip-card-back p-8">
+                        <h2 class="text-2xl font-semibold">Plus d'infos</h2>
+                        <p>Informations supplémentaires sur l'athlète</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="div-11 flip-card-inner">
+                    <div class="flip-card-front p-8">
+                        <h2 class="text-2xl font-semibold">Nom et prénom</h2>
+                        <img src='https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortRound&accessoriesType=Blank&hairColor=PastelPink&facialHairType=BeardMajestic&facialHairColor=Black&clotheType=CollarSweater&clotheColor=Red&eyeType=Default&eyebrowType=RaisedExcitedNatural&mouthType=Serious&skinColor=DarkBrown'/>
+                        <p>Description de l'athlète</p>
+                    </div>
+                    <div class="flip-card-back p-8">
+                        <h2 class="text-2xl font-semibold">Plus d'infos</h2>
+                        <p>Informations supplémentaires sur l'athlète</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="div-11 flip-card-inner">
+                    <div class="flip-card-front p-8">
+                        <h2 class="text-2xl font-semibold">Nom et prénom</h2>
+                        <img src='https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairFrizzle&accessoriesType=Wayfarers&hairColor=Platinum&facialHairType=BeardMedium&facialHairColor=Brown&clotheType=ShirtCrewNeck&clotheColor=Gray01&eyeType=Side&eyebrowType=RaisedExcitedNatural&mouthType=Serious&skinColor=Tanned'/>
+                        <p>Description de l'athlète</p>
+                    </div>
+                    <div class="flip-card-back p-8">
+                        <h2 class="text-2xl font-semibold">Plus d'infos</h2>
+                        <p>Informations supplémentaires sur l'athlète</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="separation-section bg-white"></section>
+
+    <div id="jeux" class="bottom-div container mx-auto py-8 w-full md:w-3/4">
+        <h2 id="div-13" class="text-2xl font-semibold text-center mb-8">Premier jeu à intégrer 100m</h2>
+        <div class="flex justify-center">
+            <iframe id="div-14" src="https://html5.gamedistribution.com/24238ae04d7c486eb3810964d2fe5103/?gd_sdk_referrer_url=https%3A%2F%2Fwww.jeux-gratuits.com%2Fjeu-hurdles-heroes.html" 
+            width="1600" height="800" border="0" frameborder="0" scrolling="no" allowfullscreen="" class="rounded-lg"></iframe>
+        </div>
+    </div>
+
+    <section class="separation-section bg-white"></section>
+
+    <section class="bottom-div container mx-auto py-8 w-full md:w-1/2">
+        <h2 class="div-15-16 text-2xl font-semibold text-center mb-8">Quizz sur l'athlétisme</h2>
+        <div class="div-15-16 bg-white rounded-lg shadow-lg p-6 mb-6">
+            <div class="mb-4">
+                <h3 class="div-17-18 text-xl mb-2">Question 1 : Quel est le sport principal de l'athlétisme ?</h3>
+                <div class="div-17-18 flex items-center">
+                    <input type="radio" id="q1-a" name="q1" class="mr-2">
+                    <label for="q1-a">a) Football</label>
+                </div>
+                <div class="div-17-18 flex items-center">
+                    <input type="radio" id="q1-b" name="q1" class="mr-2">
+                    <label for="q1-b">b) Course à pied</label>
+                </div>
+                <div class="div-17-18 flex items-center">
+                    <input type="radio" id="q1-c" name="q1" class="mr-2">
+                    <label for="q1-c">c) Natation</label>
+                </div>
+                <br>
+                <hr class="div-19 border-2">
+                <br>
+                <h3 class="div-17-18 text-xl mb-2">Question 2 : Qui a remporté le marathon des Jeux olympiques de 2008 à Pékin ?</h3>
+                <div class="div-17-18 flex items-center">
+                    <input type="radio" id="q1-a" name="q1" class="mr-2">
+                    <label for="q1-a">a) Usain Bolt</label>
+                </div>
+                <div class="div-17-18 flex items-center">
+                    <input type="radio" id="q1-b" name="q1" class="mr-2">
+                    <label for="q1-b">b) Haile Gebrselassie<</label>
+                </div>
+                <div class="div-17-18 flex items-center">
+                    <input type="radio" id="q1-c" name="q1" class="mr-2">
+                    <label for="q1-c">c) Eliud Kipchoge</label>
+                </div>
+                <br>
+                <hr class="div-19 border-2">
+                <br>
+                <h3 class="div-17-18 text-xl mb-2">Question 3 : Quel est le symbole des Jeux olympiques ?</h3>
+                <div class="div-17-18 flex items-center">
+                    <input type="radio" id="q1-a" name="q1" class="mr-2">
+                    <label for="q1-a">a) Une flamme olympique</label>
+                </div>
+                <div class="div-17-18 flex items-center">
+                    <input type="radio" id="q1-b" name="q1" class="mr-2">
+                    <label for="q1-b">b) Une médaille d'or</label>
+                </div>
+                <div class="div-17-18 flex items-center">
+                    <input type="radio" id="q1-c" name="q1" class="mr-2">
+                    <label for="q1-c">c) Un drapeau olympique</label>
+                </div>
+                <br>
+                <hr class="div-19 border-2">
+                <br>
+                <h3 class="div-17-18 text-xl mb-2">Question 4 : Quel est le pays qui a remporté le plus de médailles d'or aux Jeux olympiques d'été de 2020 ?</h3>
+                <div class="div-17-18 flex items-center">
+                    <input type="radio" id="q1-a" name="q1" class="mr-2">
+                    <label for="q1-a">a) Les États-Unis</label>
+                </div>
+                <div class="div-17-18 flex items-center">
+                    <input type="radio" id="q1-b" name="q1" class="mr-2">
+                    <label for="q1-b">b) La Chine</label>
+                </div>
+                <div class="div-17-18 flex items-center">
+                    <input type="radio" id="q1-c" name="q1" class="mr-2">
+                    <label for="q1-c">c) Le Japon</label>
+                </div>
+                <br>
+                <hr class="div-19 border-2">
+                <br>
+                <h3 class="div-17-18 text-xl mb-2">Question 5 : Quel est le record du monde du marathon masculin ?</h3>
+                <div class="div-17-18 flex items-center">
+                    <input type="radio" id="q1-a" name="q1" class="mr-2">
+                    <label for="q1-a">a) 2 heures 01 minutes 30 secondes</label>
+                </div>
+                <div class="div-17-18 flex items-center">
+                    <input type="radio" id="q1-b" name="q1" class="mr-2">
+                    <label for="q1-b">b) 2 heures 06 minutes 32 secondes</label>
+                </div>
+                <div class="div-17-18 flex items-center">
+                    <input type="radio" id="q1-c" name="q1" class="mr-2">
+                    <label for="q1-c">c) 1 heure 58 minutes 14 secondes</label>
+                </div>
+            </div>
+        </div>
+        <button id="div-20" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Soumettre</button>
+    </section>
+
+    <section class="separation-section bg-white"></section>
+
+    <div class="bottom-div container mx-auto py-8 md:w-3/4">
+        <h2 id="div-21" class="text-2xl font-semibold text-center mb-8">Second jeu à intégrer 100m haie</h2>
+        <div class="flex justify-center">
+            <iframe id="div-22" src="https://html5.gamedistribution.com/24238ae04d7c486eb3810964d2fe5103/?gd_sdk_referrer_url=https%3A%2F%2Fwww.jeux-gratuits.com%2Fjeu-hurdles-heroes.html" 
+            width="1600" height="800" border="0" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
+        </div>
+    </div>
+
+    <section class="separation-section bg-white"></section>
+
+    <section class="bottom-div container mx-auto py-8 w-full md:w-1/2">
+        <h2 class="div-23-24 text-2xl font-semibold text-center mb-8">Quizz sur l'athlétisme</h2>
+        <div class="div-23-24 bg-white rounded-lg shadow-lg p-6 mb-6">
+            <div class="mb-4">
+                <h3 class="div-25-26 text-xl mb-2">Question 1 : Quel est le sport principal de l'athlétisme ?</h3>
+                <div class="div-25-26 flex items-center">
+                    <input type="radio" id="q1-a" name="q1" class="mr-2">
+                    <label for="q1-a">a) Football</label>
+                </div>
+                <div class="div-25-26 flex items-center">
+                    <input type="radio" id="q1-b" name="q1" class="mr-2">
+                    <label for="q1-b">b) Course à pied</label>
+                </div>
+                <div class="div-25-26 flex items-center">
+                    <input type="radio" id="q1-c" name="q1" class="mr-2">
+                    <label for="q1-c">c) Natation</label>
+                </div>
+                <br>
+                <hr class="div-27 border-2">
+                <br>
+                <h3 class="div-25-26 text-xl mb-2">Question 2 : Qui a remporté le marathon des Jeux olympiques de 2008 à Pékin ?</h3>
+                <div class="div-25-26 flex items-center">
+                    <input type="radio" id="q1-a" name="q1" class="mr-2">
+                    <label for="q1-a">a) Usain Bolt</label>
+                </div>
+                <div class="div-25-26 flex items-center">
+                    <input type="radio" id="q1-b" name="q1" class="mr-2">
+                    <label for="q1-b">b) Haile Gebrselassie<</label>
+                </div>
+                <div class="div-25-26 flex items-center">
+                    <input type="radio" id="q1-c" name="q1" class="mr-2">
+                    <label for="q1-c">c) Eliud Kipchoge</label>
+                </div>
+                <br>
+                <hr class="div-27 border-2">
+                <br>
+                <h3 class="div-25-26 text-xl mb-2">Question 3 : Quel est le symbole des Jeux olympiques ?</h3>
+                <div class="div-25-26 flex items-center">
+                    <input type="radio" id="q1-a" name="q1" class="mr-2">
+                    <label for="q1-a">a) Une flamme olympique</label>
+                </div>
+                <div class="div-25-26 flex items-center">
+                    <input type="radio" id="q1-b" name="q1" class="mr-2">
+                    <label for="q1-b">b) Une médaille d'or</label>
+                </div>
+                <div class="div-25-26 flex items-center">
+                    <input type="radio" id="q1-c" name="q1" class="mr-2">
+                    <label for="q1-c">c) Un drapeau olympique</label>
+                </div>
+                <br>
+                <hr class="div-27 border-2">
+                <br>
+                <h3 class="div-25-26 text-xl mb-2">Question 4 : Quel est le pays qui a remporté le plus de médailles d'or aux Jeux olympiques d'été de 2020 ?</h3>
+                <div class="div-25-26 flex items-center">
+                    <input type="radio" id="q1-a" name="q1" class="mr-2">
+                    <label for="q1-a">a) Les États-Unis</label>
+                </div>
+                <div class="div-25-26 flex items-center">
+                    <input type="radio" id="q1-b" name="q1" class="mr-2">
+                    <label for="q1-b">b) La Chine</label>
+                </div>
+                <div class="div-25-26 flex items-center">
+                    <input type="radio" id="q1-c" name="q1" class="mr-2">
+                    <label for="q1-c">c) Le Japon</label>
+                </div>
+                <br>
+                <hr class="div-27 border-2">
+                <br>
+                <h3 class="div-25-26 text-xl mb-2">Question 5 : Quel est le record du monde du marathon masculin ?</h3>
+                <div class="div-25-26 flex items-center">
+                    <input type="radio" id="q1-a" name="q1" class="mr-2">
+                    <label for="q1-a">a) 2 heures 01 minutes 30 secondes</label>
+                </div>
+                <div class="div-25-26 flex items-center">
+                    <input type="radio" id="q1-b" name="q1" class="mr-2">
+                    <label for="q1-b">b) 2 heures 06 minutes 32 secondes</label>
+                </div>
+                <div class="div-25-26 flex items-center">
+                    <input type="radio" id="q1-c" name="q1" class="mr-2">
+                    <label for="q1-c">c) 1 heure 58 minutes 14 secondes</label>
+                </div>
+            </div>
+        </div>
+        <button id="div-28" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Soumettre</button>
+    </section>
+
+    <section class="separation-section bg-white"></section>
+
+    <div class="bottom-div container mx-auto py-12 md:w-3/4">
+        <h2 id="div-29" class="text-2xl font-semibold text-center mb-8">Troisième jeu à intégrer Lancer de poids</h2>
+        <div class="flex justify-center">
+            <iframe id="div-30" src="https://html5.gamedistribution.com/24238ae04d7c486eb3810964d2fe5103/?gd_sdk_referrer_url=https%3A%2F%2Fwww.jeux-gratuits.com%2Fjeu-hurdles-heroes.html" 
+            width="1600" height="800" border="0" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
+        </div>
+    </div>
+
+    <section class="separation-section bg-white"></section>
+
+    <section class="bottom-div container mx-auto py-8 w-full md:w-1/2">
+        <h2 class="div-31-32 text-2xl font-semibold text-center mb-8">Quizz sur l'athlétisme</h2>
+        <div class="div-31-32 bg-white rounded-lg shadow-lg p-6 mb-6">
+            <div class="mb-4">
+                <h3 class="div-33-34 text-xl mb-2">Question 1 : Quel est le sport principal de l'athlétisme ?</h3>
+                <div class="div-33-34 flex items-center">
+                    <input type="radio" id="q1-a" name="q1" class="mr-2">
+                    <label for="q1-a">a) Football</label>
+                </div>
+                <div class="div-33-34 flex items-center">
+                    <input type="radio" id="q1-b" name="q1" class="mr-2">
+                    <label for="q1-b">b) Course à pied</label>
+                </div>
+                <div class="div-33-34 flex items-center">
+                    <input type="radio" id="q1-c" name="q1" class="mr-2">
+                    <label for="q1-c">c) Natation</label>
+                </div>
+                <br>
+                <hr class="div-35 border-2">
+                <br>
+                <h3 class="div-33-34 text-xl mb-2">Question 2 : Qui a remporté le marathon des Jeux olympiques de 2008 à Pékin ?</h3>
+                <div class="div-33-34 flex items-center">
+                    <input type="radio" id="q1-a" name="q1" class="mr-2">
+                    <label for="q1-a">a) Usain Bolt</label>
+                </div>
+                <div class="div-33-34 flex items-center">
+                    <input type="radio" id="q1-b" name="q1" class="mr-2">
+                    <label for="q1-b">b) Haile Gebrselassie<</label>
+                </div>
+                <div class="div-33-34 flex items-center">
+                    <input type="radio" id="q1-c" name="q1" class="mr-2">
+                    <label for="q1-c">c) Eliud Kipchoge</label>
+                </div>
+                <br>
+                <hr class="div-35 border-2">
+                <br>
+                <h3 class="div-33-34 text-xl mb-2">Question 3 : Quel est le symbole des Jeux olympiques ?</h3>
+                <div class="div-33-34 flex items-center">
+                    <input type="radio" id="q1-a" name="q1" class="mr-2">
+                    <label for="q1-a">a) Une flamme olympique</label>
+                </div>
+                <div class="div-33-34 flex items-center">
+                    <input type="radio" id="q1-b" name="q1" class="mr-2">
+                    <label for="q1-b">b) Une médaille d'or</label>
+                </div>
+                <div class="div-33-34 flex items-center">
+                    <input type="radio" id="q1-c" name="q1" class="mr-2">
+                    <label for="q1-c">c) Un drapeau olympique</label>
+                </div>
+                <br>
+                <hr class="div-35 border-2">
+                <br>
+                <h3 class="div-33-34 text-xl mb-2">Question 4 : Quel est le pays qui a remporté le plus de médailles d'or aux Jeux olympiques d'été de 2020 ?</h3>
+                <div class="div-33-34 flex items-center">
+                    <input type="radio" id="q1-a" name="q1" class="mr-2">
+                    <label for="q1-a">a) Les États-Unis</label>
+                </div>
+                <div class="div-33-34 flex items-center">
+                    <input type="radio" id="q1-b" name="q1" class="mr-2">
+                    <label for="q1-b">b) La Chine</label>
+                </div>
+                <div class="div-33-34 flex items-center">
+                    <input type="radio" id="q1-c" name="q1" class="mr-2">
+                    <label for="q1-c">c) Le Japon</label>
+                </div>
+                <br>
+                <hr class="div-35 border-2">
+                <br>
+                <h3 class="div-33-34 text-xl mb-2">Question 5 : Quel est le record du monde du marathon masculin ?</h3>
+                <div class="div-33-34 flex items-center">
+                    <input type="radio" id="q1-a" name="q1" class="mr-2">
+                    <label for="q1-a">a) 2 heures 01 minutes 30 secondes</label>
+                </div>
+                <div class="div-33-34 flex items-center">
+                    <input type="radio" id="q1-b" name="q1" class="mr-2">
+                    <label for="q1-b">b) 2 heures 06 minutes 32 secondes</label>
+                </div>
+                <div class="div-33-34 flex items-center">
+                    <input type="radio" id="q1-c" name="q1" class="mr-2">
+                    <label for="q1-c">c) 1 heure 58 minutes 14 secondes</label>
+                </div>
+            </div>
+        </div>
+        <button id="div-36" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Soumettre</button>
+    </section>
+
+    <section class="separation-section bg-white"></section>
+
+    <div class="bottom-div container mx-auto py-12 md:w-3/4">
+        <h2 id="div-37" class="text-2xl font-semibold text-center mb-8">Quatrième jeu à intégrer Saut en hauteur (paralympique)</h2>
+        <div class="flex justify-center">
+            <iframe id="div-38" src="https://html5.gamedistribution.com/24238ae04d7c486eb3810964d2fe5103/?gd_sdk_referrer_url=https%3A%2F%2Fwww.jeux-gratuits.com%2Fjeu-hurdles-heroes.html" 
+            width="1600" height="800" border="0" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
+        </div>
+    </div>
+
+    <section class="separation-section bg-white"></section>
+
+    <section class="bottom-div container mx-auto py-8 w-full md:w-1/2">
+        <h2 class="div-39-40 text-2xl font-semibold text-center mb-8">Quizz sur l'athlétisme</h2>
+        <div class="div-39-40 bg-white rounded-lg shadow-lg p-6 mb-6">
+            <div class="mb-4">
+                <h3 class="div-41-42 text-xl mb-2">Question 1 : Quel est le sport principal de l'athlétisme ?</h3>
+                <div class="div-41-42 flex items-center">
+                    <input type="radio" id="q1-a" name="q1" class="mr-2">
+                    <label for="q1-a">a) Football</label>
+                </div>
+                <div class="div-41-42 flex items-center">
+                    <input type="radio" id="q1-b" name="q1" class="mr-2">
+                    <label for="q1-b">b) Course à pied</label>
+                </div>
+                <div class="div-41-42 flex items-center">
+                    <input type="radio" id="q1-c" name="q1" class="mr-2">
+                    <label for="q1-c">c) Natation</label>
+                </div>
+                <br>
+                <hr class="div-43 border-2">
+                <br>
+                <h3 class="div-41-42 text-xl mb-2">Question 2 : Qui a remporté le marathon des Jeux olympiques de 2008 à Pékin ?</h3>
+                <div class="div-41-42 flex items-center">
+                    <input type="radio" id="q1-a" name="q1" class="mr-2">
+                    <label for="q1-a">a) Usain Bolt</label>
+                </div>
+                <div class="div-41-42 flex items-center">
+                    <input type="radio" id="q1-b" name="q1" class="mr-2">
+                    <label for="q1-b">b) Haile Gebrselassie<</label>
+                </div>
+                <div class="div-41-42 flex items-center">
+                    <input type="radio" id="q1-c" name="q1" class="mr-2">
+                    <label for="q1-c">c) Eliud Kipchoge</label>
+                </div>
+                <br>
+                <hr class="div-43 border-2">
+                <br>
+                <h3 class="div-41-42 text-xl mb-2">Question 3 : Quel est le symbole des Jeux olympiques ?</h3>
+                <div class="div-41-42 flex items-center">
+                    <input type="radio" id="q1-a" name="q1" class="mr-2">
+                    <label for="q1-a">a) Une flamme olympique</label>
+                </div>
+                <div class="div-41-42 flex items-center">
+                    <input type="radio" id="q1-b" name="q1" class="mr-2">
+                    <label for="q1-b">b) Une médaille d'or</label>
+                </div>
+                <div class="div-41-42 flex items-center">
+                    <input type="radio" id="q1-c" name="q1" class="mr-2">
+                    <label for="q1-c">c) Un drapeau olympique</label>
+                </div>
+                <br>
+                <hr class="div-43 border-2">
+                <br>
+                <h3 class="div-41-42 text-xl mb-2">Question 4 : Quel est le pays qui a remporté le plus de médailles d'or aux Jeux olympiques d'été de 2020 ?</h3>
+                <div class="div-41-42 flex items-center">
+                    <input type="radio" id="q1-a" name="q1" class="mr-2">
+                    <label for="q1-a">a) Les États-Unis</label>
+                </div>
+                <div class="div-41-42 flex items-center">
+                    <input type="radio" id="q1-b" name="q1" class="mr-2">
+                    <label for="q1-b">b) La Chine</label>
+                </div>
+                <div class="div-41-42 flex items-center">
+                    <input type="radio" id="q1-c" name="q1" class="mr-2">
+                    <label for="q1-c">c) Le Japon</label>
+                </div>
+                <br>
+                <hr class="div-43 border-2">
+                <br>
+                <h3 class="div-41-42 text-xl mb-2">Question 5 : Quel est le record du monde du marathon masculin ?</h3>
+                <div class="div-41-42 flex items-center">
+                    <input type="radio" id="q1-a" name="q1" class="mr-2">
+                    <label for="q1-a">a) 2 heures 01 minutes 30 secondes</label>
+                </div>
+                <div class="div-41-42 flex items-center">
+                    <input type="radio" id="q1-b" name="q1" class="mr-2">
+                    <label for="q1-b">b) 2 heures 06 minutes 32 secondes</label>
+                </div>
+                <div class="div-41-42 flex items-center">
+                    <input type="radio" id="q1-c" name="q1" class="mr-2">
+                    <label for="q1-c">c) 1 heure 58 minutes 14 secondes</label>
+                </div>
+            </div>
+        </div>
+        <button id="div-44" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Soumettre</button>
+    </section>
+
+    <section class="separation-section bg-white"></section>
+
+    <section class="bottom-div container mx-auto py-8 w-full md:w-1/2">
+        <h2 class="div-45-46 text-2xl font-semibold text-center mb-8">Score final</h2>
+        <div class="div-45-46 bg-white rounded-lg shadow-lg p-6 mb-6">
+            <div class="flex items-center justify-between mb-4">
+                <img class="div-49-50 w-20 h-auto rounded-full" src='https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairTheCaesarSidePart&accessoriesType=Sunglasses&hairColor=Brown&facialHairType=BeardMedium&facialHairColor=Platinum&clotheType=CollarSweater&clotheColor=PastelRed&eyeType=Happy&eyebrowType=SadConcerned&mouthType=Eating&skinColor=Black'/>
+                <h2 class="div-47-48 text-xl font-semibold">Nom du joueur</h2>
+                <div class="div-47-48 text-2xl font-bold">Score : 500</div>
+            </div>
+            <div class="flex justify-end">
+                <button class="div-47-48 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mr-2">Partager sur Facebook</button>
+            </div>
+        </div>
+        <div class="div-45-46 bg-white rounded-lg shadow-lg p-6 mb-6">
+            <h3 class="div-47-48 text-xl font-semibold mb-4">Podium</h3>
+            <table class="div-47-48 w-full border-collapse">
+                <thead>
+                    <tr>
+                        <th class="p-3 border-b-2 border-gray-300">Position</th>
+                        <th class="p-3 border-b-2 border-gray-300">Nom</th>
+                        <th class="p-3 border-b-2 border-gray-300">Avatar</th>
+                        <th class="p-3 border-b-2 border-gray-300">Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="p-3">1</td>
+                        <td class="p-3">Joueur 1</td>
+                        <td class="p-3"><img class="div-49-50 w-20 h-auto rounded-full" src='https://avataaars.io/?avatarStyle=Transparent&topType=LongHairBob&accessoriesType=Wayfarers&hairColor=Brown&facialHairType=BeardLight&facialHairColor=BrownDark&clotheType=BlazerShirt&clotheColor=Black&eyeType=WinkWacky&eyebrowType=UpDownNatural&mouthType=Tongue&skinColor=Pale'/></td>
+                        <td class="p-3">1000</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3">2</td>
+                        <td class="p-3">Joueur 2</td>
+                        <td class="p-3"><img class="div-49-50 w-20 h-auto rounded-full" src='https://avataaars.io/?avatarStyle=Transparent&topType=LongHairCurvy&accessoriesType=Round&hairColor=Blonde&facialHairType=Blank&clotheType=ShirtScoopNeck&clotheColor=Red&eyeType=Default&eyebrowType=UpDown&mouthType=Smile&skinColor=DarkBrown'/></td>
+                        <td class="p-3">800</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="separation-section bg-white"></section>
+
+    <section class="bottom-div container mx-auto py-8 w-full md:w-1/2">
+        <h2 id="div-51" class="text-2xl font-semibold text-center mb-8">Contactez-nous</h2>
+        <form id="div-52" action="#" method="POST">
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-medium text-gray-700">Nom</label>
+                <input type="text" id="name" name="name" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input type="email" id="email" name="email" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+            </div>
+            <div class="mb-6">
+                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                <textarea id="message" name="message" rows="4" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                    Envoyer
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <section class="separation-section bg-white"></section>
+    
+    <section id="videos" class="bottom-div container mx-auto py-8">
+        <h2 id="div-53" class="text-2xl font-semibold text-center mb-8">Projet de site one-page : Athlétisme</h2>
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+            <div class="bg-gray-200 h-96">
+                <iframe id="div-54" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen class="w-full h-full"></iframe>
+            </div>
+            <div class="bg-gray-200 h-96">
+                <iframe id="div-55" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen class="w-full h-full"></iframe>
+            </div>
+        </div>        
+        <h2 class="div-56-57 text-xl font-semibold mt-8 mb-4">Introduction à l'athlétisme</h2>
+        <p class="div-56-57 text-lg mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae eros vel dolor malesuada finibus. Mauris ullamcorper risus nec arcu gravida vehicula. Fusce vel sapien nec justo pharetra dictum. Nullam euismod velit sed ante consequat ultricies. Duis nec turpis id urna congue fermentum sed id justo. Fusce vel sapien nec justo pharetra dictum. Nullam euismod velit sed ante consequat ultricies.</p>
+        <h2 class="div-56-57 text-xl font-semibold mb-4">Histoire de l'athlétisme</h2>
+        <p class="div-56-57 text-lg mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae eros vel dolor malesuada finibus. Mauris ullamcorper risus nec arcu gravida vehicula. Fusce vel sapien nec justo pharetra dictum. Nullam euismod velit sed ante consequat ultricies. Duis nec turpis id urna congue fermentum sed id justo. Fusce vel sapien nec justo pharetra dictum. Nullam euismod velit sed ante consequat ultricies.</p>
+    </section>  
+
+    <section class="separation-section bg-white"></section>
+
+    <div id="a-propos" class="bottom-div container mx-auto py-12">
+        <h1 id="div-58" class="text-3xl font-semibold text-center mb-8">Présentation des membres du groupe</h1>
+        <br>
+        <div class="flex justify-center">
+            <div class="max-w-4xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div id="div-59" class="bg-white rounded-lg shadow-lg p-6">
+                    <h2 class="text-xl font-bold mb-2">Notre projet</h2>
+                    <p class="text-gray-700 mb-4">Description de la première colonne. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="image_1.jpg" alt="Image de la première colonne" class="w-full rounded-md">
+                </div>
+                <div id="div-60" class="bg-white rounded-lg shadow-lg p-6">
+                    <h2 class="text-xl font-bold mb-2">Le forum</h2>
+                    <p class="text-gray-700 mb-4">Description de la deuxième colonne. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="image_2.jpg" alt="Image de la deuxième colonne" class="w-full rounded-md">
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="flex flex-wrap justify-center gap-4 md:flex-row">
+            <div class="flip-card">
+                <div class="div-61-62 flip-card-inner">
+                    <div class="flip-card-front p-8">
+                        <h2 class="text-2xl font-semibold">Camille</h2>
+                        <img src='img/camille.png'/>
+                        <p>Développement back-end & front-end, audiovisuel
+                        </p>
+                    </div>
+                    <div class="flip-card-back p-8">
+                        <p>Développeuse back-end et front-end avec une touche d'audiovisuel, je jongle entre codes et créations multimédias sans jamais enfiler de baskets. Mon terrain de jeu ? Un écran, où je fais vibrer pixels et lignes de code en harmonie. Pas de course physique ici, mais une quête constante d'excellence digitale. Mon défi : transformer vos idées en réalisations captivantes, le tout avec agilité et sans une goutte de sueur (sauf face aux deadlines !)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="div-61-62 flip-card-inner">
+                    <div class="flip-card-front p-8">
+                        <h2 class="text-2xl font-semibold">Mattéo</h2>
+                        <img src='img/Matteo.png'/>
+                        <p>Chef de projet, Stratégie Marketing & Communication</p>
+                    </div>
+                    <div class="flip-card-back p-8">
+                        <p class="text-description">Chef de projet dans l’âme, ma stratégie pour conquérir le marché est aussi affûtée que ma stratégie pour éviter le sport. Expert en communication, je sais faire parler les marques mieux que je ne parle à mon tapis de course (qui commence à prendre la poussière). Ma passion ? Transformer des idées en campagnes victorieuses, avec un zeste d'humour et une pincée d'audace. Je ne cours peut-être pas de marathon, mais je mène mes projets comme des sprints : avec détermination et un souffle d'innovation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="div-61-62 flip-card-inner">
+                    <div class="flip-card-front p-8">
+                        <h2 class="text-2xl font-semibold">Louanne</h2>
+                        <img src='img/Louanne.png'/>
+                        <p>Cheffe de projet, développement back-end & front-end, audiovisuel</p>
+                    </div>
+                    <div class="flip-card-back p-8">
+                        <p>Louanne étudiante en MMI (Métiers du Multimédia et de l'Internet), spécialisation développement web. Mais méfiez-vous, derrière son apparence calme se cache un gobelin passionné de jeux vidéo et d'aventures numériques !</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="div-61-62 flip-card-inner">
+                    <div class="flip-card-front p-8">
+                        <h2 class="text-2xl font-semibold">Cyriaque</h2>
+                        <img src='img/Cyriaque.png'/>
+                        <p>Développement Back-End & Front-End</p>
+                    </div>
+                    <div class="flip-card-back p-8">
+                        <p class="text-description">Cyriaque, apprenti sorcier développeur en LP MIAW, jonglant entre les charmes du front-end et les sortilèges du back-end. Ma véritable magie ? Marathons d'animes japonais avec un soupçon de maestria en émissions de cuisine et pâtisserie. Mon grimoire préféré ? Un IDE ouvert, mes sorts préférés s'écrivent en JavaScript et Python. Mon repas de champion ? Inspiré des écrans, cuisiné pendant les pauses débug. En quête perpétuelle du code parfait et du plat qui réconforte l'âme.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="div-61-62 flip-card-inner">
+                    <div class="flip-card-front p-8">
+                        <h2 class="text-2xl font-semibold">Magaly</h2>
+                        <img src='img/Magaly.png'/>
+                        <p>Stratégie Marketing & Communication, Contact avec la ligue, Graphisme</p>
+                    </div>
+                    <div class="flip-card-back p-8">
+                        <p class="text-description">Stratège en marketing et communication, je navigue entre brainstormings créatifs et échanges avec la ligue, sans jamais chausser les baskets. Expert en jonglage de concepts et de designs plutôt qu'en dribble, je transforme les idées en victoires visuelles. Avec moi, pas de sprint nécessaire pour atteindre l'excellence : on y court à travers des stratégies gagnantes, le tout avec le sourire et un esprit d'équipe indéfectible. Prête pour le départ ?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="div-61-62 flip-card-inner">
+                    <div class="flip-card-front p-8">
+                        <h2 class="text-2xl font-semibold">Cyril</h2>
+                        <img src='img/Cyril.PNG'/>
+                        <p>Développement Back-End & Front-End</p>
+                    </div>
+                    <div class="flip-card-back p-8">
+                        <p>Développeur front et back end avec une endurance à toute épreuve... mais seulement quand il s'agit de coder. Mon record personnel ? Plus de 10 heures sans bouger de ma chaise, sauf pour me ravitailler en café.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="separation-section bg-white"></section>
+</main>
+    
+    <script src="js/animations.js"></script>
+    <script src="js/flip.js"></script>
+    <script src="https://unpkg.com/@splidejs/splide@3.0.9/dist/js/splide.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // galerie photo splide
+            new Splide('#splide', {
+                type: 'carousel',
+                perPage: 1,
+                autoplay: true,
+                pauseOnHover: false,
+                rewind: true,
+                interval: 5000,
+            }).mount();
+        
+            // message call~to-action scroll
+            $(document).ready(function () {
+                function bounceImage() {
+                    const img = document.getElementById('img-scroll');
+                    img.style.transition = 'transform 0.3s ease-in-out';
+                    img.style.transform = 'translateY(-10px)';
+                    setTimeout(() => {
+                        img.style.transform = 'translateY(0)';
+                        setTimeout(bounceImage, 300);
+                    }, 300);
+                }
+                window.onload = function() {
+                    bounceImage();
+                };
+            });
+            
+            document.getElementById('menu-btn').addEventListener('click', function() {
+                var menu = document.getElementById('nav-menu');
+                if (menu.classList.contains('hidden')) {
+                    menu.classList.remove('hidden');
+                } else {
+                    menu.classList.add('hidden');
+                }
+            });
+            
+            setTimeout(function() {
+                var mainLoad = document.getElementById('main-load');
+                if (mainLoad) {
+                    mainLoad.style.opacity = '0';
+                    mainLoad.style.transition = 'opacity 0.5s ease-in-out';
+                    setTimeout(function() {
+                        mainLoad.style.display = 'none';
+                    }, 500);
+                }
+            
+                var loader = document.getElementById('loader');
+                if (loader) {
+                    loader.style.opacity = '0';
+                    loader.style.transition = 'opacity 0.5s ease-in-out';
+                    setTimeout(function() {
+                        loader.style.display = 'none';
+                    }, 500);
+                }
+            
+            
+                var welcomeMessage = document.createElement('div');
+                welcomeMessage.textContent = 'BIENVENUE';
+                welcomeMessage.style.position = 'absolute';
+                welcomeMessage.style.top = '0';
+                welcomeMessage.style.left = '0';
+                welcomeMessage.style.width = '100vw';
+                welcomeMessage.style.height = '100vh';
+                welcomeMessage.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+                welcomeMessage.style.color = 'white';
+                welcomeMessage.style.fontFamily = 'Arial, sans-serif';
+                welcomeMessage.style.fontSize = '3rem';
+                welcomeMessage.style.display = 'flex';
+                welcomeMessage.style.justifyContent = 'center';
+                welcomeMessage.style.alignItems = 'center';
+                welcomeMessage.style.zIndex = '100';
+                welcomeMessage.style.opacity = '0';
+                welcomeMessage.style.transition = 'opacity 0.5s ease-in-out';
+                document.body.appendChild(welcomeMessage);
+            
+                setTimeout(function() {
+                    welcomeMessage.style.opacity = '1';
+                }, 100);
+            
+                setTimeout(function() {
+                    welcomeMessage.style.opacity = '0';
+                    setTimeout(function() {
+                        document.body.removeChild(welcomeMessage);
+                    }, 500);
+                }, 2000);
+            }, 5000);           
+        });
+    </script>
+
+
+    <footer class="bg-gray-200 py-3 text-center">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="text-center">
+                    <p><a href="#">L'athlétisme en NC</a></p>
+                    <p><a href="#athletes">Nos Athlètes</a></p>
+                    <p><a href="#jeux">Jeux</a></p>
+                    <p><a href="#videos">Vidéos</a></p>
+                    <p><a href="#a-propos">A propos</a></p>
+                </div>
+                <div class="text-center">
+                    <p>Toujours plus haut</p>
+                    <p>Toujours plus loin</p>
+                    <p>Toujours plus fort</p>
+                </div>
+                <div class="text-center">
+                    <p>Adresse</p>
+                    <p>Émail</p>
+                    <p>Téléphone</p>
+                </div>
+            </div>
+            <div class="mb-4">© 2024 SAÉ. Tous droits réservés.</div>
+        </div>
+    </footer>
+</body>
+</html>
